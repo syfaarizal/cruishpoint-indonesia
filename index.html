@@ -1,88 +1,149 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" id="htmlLang">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CruisePoint Indonesia</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="icon" type="image/png" href="./assets/img/logo-cruisepoint.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__top container">
-      <div class="logo">
-        <img src="/assets/img/logo-header.png" alt="CruisePoint Logo" width="150" height="auto">
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-logo">
+          <img src="./assets/img/logo-cruisepoint.png" alt="CruisePoint Logo" class="logo-img">
+          <span class="logo-text">CruisePoint</span>
+        </a>
       </div>
-      <nav class="nav">
-        <a href="#about" class="nav__link">About</a>
-        <a href="#services" class="nav__link">Services</a>
-        <a href="#testimonials" class="nav__link">Testimonials</a>
-        <a href="#contact" class="nav__link">Contact</a>
-      </nav>
-      <div class="language-switch">
-        <img src="https://flagcdn.com/id.svg" alt="ID" width="24" height="15" onclick="switchLanguage('id')">
-        <img src="https://flagcdn.com/gb.svg" alt="EN" width="24" height="15" onclick="switchLanguage('en')">
+      <div class="nav-menu">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i>About Us</a>
+        <a class="nav-link" href="#services"><i class="fas fa-concierge-bell"></i>Services</a>
+        <a class="nav-link" href="#principals"><i class="fas fa-briefcase"></i>Principals</a>
+        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a>
       </div>
+      <div>
+        <button type="submit" class="nav-actions">Apply Now</button >
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Menu navigasi" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
     </div>
-    <div class="header__bottom container">
-      <h1 class="header__title">CruisePoint Indonesia</h1>
-      <p class="header__subtitle">Empowering your maritime career</p>
+  </nav>
+  
+  <header class="hero-video">
+    <video class="hero-bg" autoplay muted loop playsinline>
+      <source src="./assets/vid/bg-vid-header.mp4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>JOIN THE <br><span class="hero-h">CRUISE JOURNEY</span></h1>
+      <p>Explore careers with global cruise lines</p>
+      <a href="#apply-form" class="btn-cta">Apply Now</a>
     </div>
   </header>
+
   <main>
     <section id="about" class="section">
-      <div class="about container">
+      <div class="container">
         <h2 class="section__title">About CruisePoint Indonesia</h2>
         <div class="about__content">
-          <img src="/assets/img/abt-img.png" alt="CruisePoint Team" class="about__image" width="400" height="auto">
+          <img src="./assets/img/abt-img.png" alt="CruisePoint Team" class="about__image">
           <p class="about__text">
-            At CruisePoint Indonesia, we are more than a recruitment and legal assistance firm - we are your dedicated ally in navigating the cruise industry. With a profound understanding of maritime careers and a commitment to protecting seafarers' rights, we specialize in connecting Indonesian crew members with global opportunities and providing essential legal support.
+            CruisePoint Indonesia is a trusted recruitment and legal assistance agency specializing in the international cruise industry. With extensive experience in connecting Indonesian seafarers to global cruise lines, we provide comprehensive support — from preparation and document assistance to post‑contract guidance.
             <br><br>
-            Whether you're aiming to embark on a rewarding career in the cruise sector, or need assistance with legal matters related to repatriation due to illness or workplace incidents, our devoted team is here to help you achieve your maritime goals. With CruisePoint Indonesia, your journey in the cruise industry is in capable hands.
+            We assist crew members in processing essential documents such as passports, seaman books, and other related permits. For those in need of official endorsement, we also issue reference letters to support passport applications and other maritime requirements.
             <br><br>
-            Let us guide you through the exciting world of maritime careers while ensuring you receive the legal support you need for a safe and successful experience. Welcome to CruisePoint Indonesia where maritime aspirations meet dedicated service.
+            Our mission is to help Indonesian talents navigate the cruise career path with confidence and readiness, backed by legal knowledge and industry experience.
           </p>
         </div>
       </div>
     </section>
+    
     <section id="services" class="section">
       <div class="services__content">
-        <div class="services container">
-            <div class="services__header">
-              <h2 class="section__title">Services offered by CruisePoint Indonesia</h2>
-              <p class="services__subtitle">Reach out to us for tailored solutions and expert support.</p>
+        <div class="container">
+          <div class="services__header">
+            <h2 class="section__title">Services offered by CruisePoint Indonesia</h2>
+            <p class="services__subtitle">Reach out to us for tailored solutions and expert support.</p>
+          </div>
+          <div class="services__grid">
+            <div class="service__card">
+              <h3 class="service__title">Career Placement</h3>
+              <p class="service__description">
+                Leveraging our extensive network, we provide permanent placements that match your skills and aspirations, ensuring you find the right position in the cruise industry.
+              </p>
+              <a href="#contact" class="service__link">Contact</a>
             </div>
-            <div class="services__grid">
-              <div class="service__card">
-                <h3 class="service__title">Career Placement</h3>
-                <p class="service__description">
-                  Leveraging our extensive network, we provide permanent placements that match your skills and aspirations, ensuring you find the right position in the cruise industry.
-                </p>
-                <a href="#contact" class="service__link">Contact</a>
-              </div>
-              <div class="service__card">
-                <h3 class="service__title">Legal Assistance</h3>
-                <p class="service__description">
-                  Our legal experts provide personalized assistance for contracts and workplace incidents, ensuring you’re fully supported throughout your maritime journey.
-                </p>
-                <a href="#contact" class="service__link">Contact</a>
-              </div>
-              <div class="service__card">
-                <h3 class="service__title">Industry Insights</h3>
-                <p class="service__description">
-                  We offer crucial insights into the cruise industry, helping you understand trends and opportunities aligned with your career goals.
-                </p>
-                <a href="#contact" class="service__link">Contact</a>
-              </div>
+            <div class="service__card">
+              <h3 class="service__title">Legal Assistance</h3>
+              <p class="service__description">
+                Our legal experts provide personalized assistance for contracts and workplace incidents, ensuring you're fully supported throughout your maritime journey.
+              </p>
+              <a href="#contact" class="service__link">Contact</a>
+            </div>
+            <div class="service__card">
+              <h3 class="service__title">Industry Insights</h3>
+              <p class="service__description">
+                We offer crucial insights into the cruise industry, helping you understand trends and opportunities aligned with your career goals.
+              </p>
+              <a href="#contact" class="service__link">Contact</a>
             </div>
           </div>
         </div>
       </div>
-        <p class="services__note">
-          Navigating maritime careers with expertise and dedication
-        </p>
+      <p class="services__note">
+        Navigating maritime careers with expertise and dedication
+      </p>
     </section>
+    <section id="principals" class="section">
+  <div class="container">
+    <h2 class="section__title">Our Principals</h2>
+    <div class="principals__grid">
+      <div class="principal__card">
+        <img src="./assets/img/Virgin-Voyages-Logo.png" alt="Virgin Voyages Logo" class="principal__logo">
+        <h3 class="principal__name">Virgin Voyages</h3>
+        <p class="principal__slogan">"Epic Sea Change for All"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      <div class="principal__card">
+        <img src="./assets/img/Viking-River-Cruises-Logo.png" alt="Viking River Cruises Logo" class="principal__logo">
+        <h3 class="principal__name">Viking River Cruises</h3>
+        <p class="principal__slogan">"Exploring the World in Comfort"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      <div class="principal__card">
+        <img src="./assets/img/Carnival-Cruise-Lines-Logo.png" alt="Carnival Cruise Lines Logo" class="principal__logo">
+        <h3 class="principal__name">Carnival Cruise Line</h3>
+        <p class="principal__slogan">"Fun for All"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      <div class="principal__card">
+        <img src="./assets/img/Costa-Cruises-Logo.png" alt="Costa Cruises Logo" class="principal__logo">
+        <h3 class="principal__name">Costa Cruises</h3>
+        <p class="principal__slogan">"Italy’s Finest at Sea"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      <div class="principal__card">
+        <img src="./assets/img/Princess-Cruises-Logo.png" alt="Princess Cruises Logo" class="principal__logo">
+        <h3 class="principal__name">Princess Cruises</h3>
+        <p class="principal__slogan">"Come Back New"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      <div class="principal__card">
+        <img src="./assets/img/P&O-Cruises-Logo.png" alt="P&O Cruises Logo" class="principal__logo">
+        <h3 class="principal__name">P&O Cruises</h3>
+        <p class="principal__slogan">"Like No Place on Earth"</p>
+        <a href="#" class="btn-jobs">View Jobs</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 </body>
 </html>
