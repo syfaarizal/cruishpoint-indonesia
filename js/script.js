@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Clone navigation for fixed header
     const mainNav = document.getElementById("mainNav");
     const fixedNav = document.getElementById("fixedNav");
     if (mainNav && fixedNav) {
         fixedNav.innerHTML = mainNav.innerHTML;
+        fixedNav.className = mainNav.className + " clone-nav";
     }
 
-    // Mobile menu toggle functionality
     const mobileMenuToggle = document.getElementById("mobileMenuToggle");
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener("click", function() {
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Highlight current page in navigation
     const currentPage = location.pathname.split("/").pop() || "index.html";
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
