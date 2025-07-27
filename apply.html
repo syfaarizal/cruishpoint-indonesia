@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - CruisePoint Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/img/logo-cruisepoint.png">
+</head>
+<body>
+    <nav id="mainNav" class="navbar original-nav">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-logo">
+                    <img src="./assets/img/logo-cruisepoint.png" alt="CruisePoint Logo" class="logo-img">
+                    <span class="logo-text">CruisePoint</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a class="nav-link" href="index.html#about"><i class="fas fa-info-circle"></i>About Us</a>
+                <a class="nav-link" href="index.html#services"><i class="fas fa-concierge-bell"></i>Services</a>
+                <a class="nav-link" href="index.html#principals"><i class="fas fa-briefcase"></i>Principals</a>
+                <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a>
+            </div>
+            <div>
+                <a href="apply.html" class="nav-actions">Apply Now</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu navigasi" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+    <nav id="fixedNav" class="navbar clone-nav"></nav>
+    <header>
+        <div class="header__container__apply">
+            <div class="header__content__apply">
+                <h1 class="header__title">Apply Now</h1>
+                <p class="header__subtitle">Start your maritime career journey with CruisePoint Indonesia</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="apply" class="section apply-section">
+            <div class="container">
+                <h2 class="section__title">Apply for Cruise Ship Jobs</h2>
+                <p class="section__subtitle">Fill out the form below to start your maritime career journey</p>
+                <div class="apply__content">
+                    <form class="apply__form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="position">Desired Position</label>
+                                <select id="position" name="position" required>
+                                    <option value="">Select Position</option>
+                                    <option value="deck-officer">Deck Officer</option>
+                                    <option value="engine-officer">Engine Officer</option>
+                                    <option value="steward">Steward/Stewardess</option>
+                                    <option value="chef">Chef/Cook</option>
+                                    <option value="entertainer">Entertainment Staff</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label for="experience">Years of Experience</label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Select Experience</option>
+                                    <option value="0">No experience</option>
+                                    <option value="1-2">1-2 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="5+">5+ years</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="cv">Upload Your CV (PDF, max 2MB)</label>
+                            <input type="file" id="cv" name="cv" accept=".pdf" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="photo">Upload Your Photo (JPG, max 1MB)</label>
+                            <input type="file" id="photo" name="photo" accept=".jpg,.jpeg" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="certificates">Additional Certificates (ZIP, max 5MB)</label>
+                            <input type="file" id="certificates" name="certificates" accept=".zip,.pdf">
+                        </div>
+
+                        <div class="form__group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">terms and conditions</a> and privacy policy</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Submit Application</button>
+                    </form>
+                    <div class="apply__info">
+                        <h3>Application Process</h3>
+                        <div class="process__steps">
+                            <div class="step">
+                                <div class="step__number">1</div>
+                                <div class="step__content">
+                                    <h4>Submit Application</h4>
+                                    <p>Complete the form with your details and required documents</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">2</div>
+                                <div class="step__content">
+                                    <h4>Initial Screening</h4>
+                                    <p>Our team will review your application within 3-5 business days</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">3</div>
+                                <div class="step__content">
+                                    <h4>Interview</h4>
+                                    <p>Selected candidates will be invited for an interview (online or in-person)</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">4</div>
+                                <div class="step__content">
+                                    <h4>Job Offer</h4>
+                                    <p>Successful candidates will receive a job offer and contract details</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apply__tips">
+                            <h4>Application Tips</h4>
+                            <ul>
+                                <li>Ensure all information is accurate and complete</li>
+                                <li>Upload clear, professional documents</li>
+                                <li>Highlight relevant maritime experience</li>
+                                <li>Prepare for potential interview questions about ship life</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+        <div class="footer__content">
+            <div class="footer__about">
+            <div class="footer__logo">
+                <img src="./assets/img/bg-footer.png" alt="CruisePoint Logo">
+            </div>
+            <p>Trusted partner in maritime recruitment and legal aid, linking Indonesian talents to global cruise jobs.</p>
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="footer__links">
+            <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                <li><a href="#principals"><i class="fas fa-chevron-right"></i> Principals</a></li>
+                <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+            <h3>Contact Info</h3>
+                <div class="footer__contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Cruise Street, Jakarta, Indonesia</p>
+                </div>
+                <div class="footer__contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+62 123 4567 890</p>
+                </div>
+                <div class="footer__contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@cruisepoint.id</p>
+                </div>
+                <div class="footer__contact-item">
+                <i class="fas fa-clock"></i>
+                <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+            <div class="footer__copyright">
+                <p>&copy; 2023 CruisePoint Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -64,3 +64,18 @@
     font-size: 2rem;
   }
 }
+
+/* Responsive Styles Apply*/
+@media (max-width: 768px) {
+    .apply__content {
+        grid-template-columns: 1fr;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+    }
+
+    .apply__info {
+        position: static;
+    }
+}
