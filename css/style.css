@@ -200,6 +200,22 @@ body {
   position: relative;
 }
 
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 89vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero-bg iframe {
+  width: 100%;
+  height: 89vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .hero-video {
   position: relative;
   height: 89vh;
