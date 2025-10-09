@@ -1,6 +1,6 @@
 # **CruisePoint Indonesia – Responsive Landing Page**  
 
-A professional and responsive landing page built for **CruisePoint Indonesia**, a recruitment and legal assistance agency specializing in connecting Indonesian seafarers to global cruise lines. This project focuses on a modern, user-friendly design and seamless navigation optimized for both desktop and mobile devices.  
+A professional and responsive landing page built for **CruisePoint Indonesia**, a recruitment and legal assistance agency specializing in connecting Indonesian seafarers to global cruise lines. This project focuses on a modern, user-friendly design and seamless navigation optimized for both desktop and mobile devices. 
 
 ---
 
