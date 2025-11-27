@@ -177,4 +177,12 @@
     margin: 20px 20px;
     align-items: center;
   }
+
+  .footer__about p {
+    text-align: left;
+  }
+
+  .footer__links {
+    margin-left: 0;
+  }
 }
