@@ -57,6 +57,45 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hero-video {
+    height: 80vh;
+  }
+  .container.nav-container {
+    padding: 0;
+  }
+  .container.nav-container {
+    margin: 0 0 0 35px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-img {
+    margin: 0 0 10px 0;
+  }
+  .nav-menu {
+    gap: 0.5rem;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  .services__note {
+    font-size: 1.5rem;
+  }
+  .principals__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__content {
+    gap: 20px;
+  }
+  .section__title {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile-menu-toggle {
     display: block;
@@ -174,7 +213,7 @@
 
   .principals__grid {
     gap: 1.5rem;
-    margin: 20px 20px;
+    margin-left: 30px;
     align-items: center;
   }
 
