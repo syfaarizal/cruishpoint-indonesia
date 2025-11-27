@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero-video {
     height: 80vh;
   }
@@ -167,6 +167,10 @@
 }
 
 @media (max-width: 430px) {
+  .container.nav-container{
+    margin: 0 10px;
+  }
+
   .logo-img {
     width: 90px;
     margin-right: 0;
