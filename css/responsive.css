@@ -178,6 +178,15 @@
     align-items: center;
   }
 
+  .services__note {
+    font-size: 0.9rem;
+    padding: 20px 5px;
+  }
+
+  .services__note::before {
+    background: rgb(0, 0, 0);
+  }
+
   .footer__about p {
     text-align: left;
   }
